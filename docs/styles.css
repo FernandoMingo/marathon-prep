@@ -41,6 +41,7 @@ h2 { margin: 0 0 12px; }
 }
 .kpi .label { color: #64748b; font-size: 0.85rem; margin-bottom: 6px; }
 .kpi .value { font-size: 1.2rem; font-weight: 700; }
+.kpi .note { color: #334155; font-size: 0.82rem; margin-top: 6px; }
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
