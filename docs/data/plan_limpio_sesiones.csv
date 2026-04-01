@@ -1,0 +1,197 @@
+semana,fecha,dia,fase,sesion_plan,modalidad,km_objetivo_min,km_objetivo_max,km_objetivo,volumen_semana_objetivo_min,volumen_semana_objetivo_max,week
+1,2026-03-30,lunes,Base con fútbol,6 km recovery Z1-Z2,run,6.0,6.0,6.0,46.0,50.0,2026-04-05
+1,2026-03-31,martes,Base con fútbol,Fútbol 6-10 km alta intensidad,football,6.0,10.0,8.0,46.0,50.0,2026-04-05
+1,2026-04-01,miércoles,Base con fútbol,10 km progresivo suave (6 km Z2 + 4 km Z3 baja),run,10.0,10.0,10.0,46.0,50.0,2026-04-05
+1,2026-04-02,jueves,Base con fútbol,Fútbol 6-10 km alta intensidad,football,6.0,10.0,8.0,46.0,50.0,2026-04-05
+1,2026-04-03,viernes,Base con fútbol,14 km Z2 tirada larga,run,14.0,14.0,14.0,46.0,50.0,2026-04-05
+1,2026-04-04,sábado,Base con fútbol,Descanso + fuerza 30-40',rest,,,,46.0,50.0,2026-04-05
+1,2026-04-05,domingo,Base con fútbol,Partido / fútbol 30-90',football,,,,46.0,50.0,2026-04-05
+2,2026-04-06,lunes,Base con fútbol,8 km Z2 suave,run,8.0,8.0,8.0,48.0,52.0,2026-04-12
+2,2026-04-07,martes,Base con fútbol,Fútbol 6-10 km alta intensidad,football,6.0,10.0,8.0,48.0,52.0,2026-04-12
+2,2026-04-08,miércoles,Base con fútbol,10 km steady Z2 alta,run,10.0,10.0,10.0,48.0,52.0,2026-04-12
+2,2026-04-09,jueves,Base con fútbol,Fútbol 6-10 km alta intensidad,football,6.0,10.0,8.0,48.0,52.0,2026-04-12
+2,2026-04-10,viernes,Base con fútbol,16 km Z2 tirada larga,run,16.0,16.0,16.0,48.0,52.0,2026-04-12
+2,2026-04-11,sábado,Base con fútbol,Descanso + fuerza 30-40',rest,,,,48.0,52.0,2026-04-12
+2,2026-04-12,domingo,Base con fútbol,Partido / fútbol 30-90',football,,,,48.0,52.0,2026-04-12
+3,2026-04-13,lunes,Base con fútbol,8 km Z2 suave,run,8.0,8.0,8.0,52.0,56.0,2026-04-19
+3,2026-04-14,martes,Base con fútbol,Fútbol 6-10 km alta intensidad,football,6.0,10.0,8.0,52.0,56.0,2026-04-19
+3,2026-04-15,miércoles,Base con fútbol,12 km progresivo (8 km Z2 + 4 km a RM controlado),run,12.0,12.0,12.0,52.0,56.0,2026-04-19
+3,2026-04-16,jueves,Base con fútbol,Fútbol 6-10 km alta intensidad,football,6.0,10.0,8.0,52.0,56.0,2026-04-19
+3,2026-04-17,viernes,Base con fútbol,18 km Z2 tirada larga,run,18.0,18.0,18.0,52.0,56.0,2026-04-19
+3,2026-04-18,sábado,Base con fútbol,Descanso + fuerza 30-40',rest,,,,52.0,56.0,2026-04-19
+3,2026-04-19,domingo,Base con fútbol,Partido / fútbol 30-90',football,,,,52.0,56.0,2026-04-19
+4,2026-04-20,lunes,Base con fútbol - descarga,6 km recovery Z1-Z2,run,6.0,6.0,6.0,42.0,46.0,2026-04-26
+4,2026-04-21,martes,Base con fútbol - descarga,Fútbol 6-10 km alta intensidad,football,6.0,10.0,8.0,42.0,46.0,2026-04-26
+4,2026-04-22,miércoles,Base con fútbol - descarga,8 km Z2 con 2 km finales a RM suave,run,8.0,8.0,8.0,42.0,46.0,2026-04-26
+4,2026-04-23,jueves,Base con fútbol - descarga,Fútbol 6-10 km alta intensidad,football,6.0,10.0,8.0,42.0,46.0,2026-04-26
+4,2026-04-24,viernes,Base con fútbol - descarga,14 km Z2 tirada larga,run,14.0,14.0,14.0,42.0,46.0,2026-04-26
+4,2026-04-25,sábado,Base con fútbol - descarga,Descanso + movilidad,rest,,,,42.0,46.0,2026-04-26
+4,2026-04-26,domingo,Base con fútbol - descarga,Partido / fútbol 30-90',football,,,,42.0,46.0,2026-04-26
+5,2026-04-27,lunes,Base con fútbol,8 km Z2 suave,run,8.0,8.0,8.0,54.0,58.0,2026-05-03
+5,2026-04-28,martes,Base con fútbol,Fútbol 6-10 km alta intensidad,football,6.0,10.0,8.0,54.0,58.0,2026-05-03
+5,2026-04-29,miércoles,Base con fútbol,12 km progresivo con 3 km a RM,run,12.0,12.0,12.0,54.0,58.0,2026-05-03
+5,2026-04-30,jueves,Base con fútbol,Fútbol 6-10 km alta intensidad,football,6.0,10.0,8.0,54.0,58.0,2026-05-03
+5,2026-05-01,viernes,Base con fútbol,20 km Z2 tirada larga,run,20.0,20.0,20.0,54.0,58.0,2026-05-03
+5,2026-05-02,sábado,Base con fútbol,Descanso + fuerza 30-40',rest,,,,54.0,58.0,2026-05-03
+5,2026-05-03,domingo,Base con fútbol,Partido / fútbol 30-90',football,,,,54.0,58.0,2026-05-03
+6,2026-05-04,lunes,Base con fútbol,8 km Z2 suave,run,8.0,8.0,8.0,56.0,60.0,2026-05-10
+6,2026-05-05,martes,Base con fútbol,Fútbol 6-10 km alta intensidad,football,6.0,10.0,8.0,56.0,60.0,2026-05-10
+6,2026-05-06,miércoles,Base con fútbol,12 km steady con 5 km a RM,run,12.0,12.0,12.0,56.0,60.0,2026-05-10
+6,2026-05-07,jueves,Base con fútbol,Fútbol 6-10 km alta intensidad,football,6.0,10.0,8.0,56.0,60.0,2026-05-10
+6,2026-05-08,viernes,Base con fútbol,22 km Z2 tirada larga,run,22.0,22.0,22.0,56.0,60.0,2026-05-10
+6,2026-05-09,sábado,Base con fútbol,Descanso + fuerza 30-40',rest,,,,56.0,60.0,2026-05-10
+6,2026-05-10,domingo,Base con fútbol,Partido / fútbol 30-90',football,,,,56.0,60.0,2026-05-10
+7,2026-05-11,lunes,Base con fútbol,10 km Z2,run,10.0,10.0,10.0,60.0,64.0,2026-05-17
+7,2026-05-12,martes,Base con fútbol,Fútbol 6-10 km alta intensidad,football,6.0,10.0,8.0,60.0,64.0,2026-05-17
+7,2026-05-13,miércoles,Base con fútbol,14 km progresivo suave,run,14.0,14.0,14.0,60.0,64.0,2026-05-17
+7,2026-05-14,jueves,Base con fútbol,Fútbol 6-10 km alta intensidad,football,6.0,10.0,8.0,60.0,64.0,2026-05-17
+7,2026-05-15,viernes,Base con fútbol,24 km Z2 tirada larga,run,24.0,24.0,24.0,60.0,64.0,2026-05-17
+7,2026-05-16,sábado,Base con fútbol,Descanso + fuerza 30-40',rest,,,,60.0,64.0,2026-05-17
+7,2026-05-17,domingo,Base con fútbol,Partido / fútbol 30-90',football,,,,60.0,64.0,2026-05-17
+8,2026-05-18,lunes,Base con fútbol - descarga,6 km recovery Z1-Z2,run,6.0,6.0,6.0,48.0,52.0,2026-05-24
+8,2026-05-19,martes,Base con fútbol - descarga,Fútbol 6-10 km alta intensidad,football,6.0,10.0,8.0,48.0,52.0,2026-05-24
+8,2026-05-20,miércoles,Base con fútbol - descarga,10 km Z2 estable,run,10.0,10.0,10.0,48.0,52.0,2026-05-24
+8,2026-05-21,jueves,Base con fútbol - descarga,Fútbol 6-10 km alta intensidad,football,6.0,10.0,8.0,48.0,52.0,2026-05-24
+8,2026-05-22,viernes,Base con fútbol - descarga,18 km Z2 tirada larga,run,18.0,18.0,18.0,48.0,52.0,2026-05-24
+8,2026-05-23,sábado,Base con fútbol - descarga,Descanso + movilidad,rest,,,,48.0,52.0,2026-05-24
+8,2026-05-24,domingo,Base con fútbol - descarga,Partido / fútbol 30-90',football,,,,48.0,52.0,2026-05-24
+9,2026-05-25,lunes,Construcción con fútbol,10 km Z2,run,10.0,10.0,10.0,60.0,64.0,2026-05-31
+9,2026-05-26,martes,Construcción con fútbol,Fútbol 6-10 km alta intensidad,football,6.0,10.0,8.0,60.0,64.0,2026-05-31
+9,2026-05-27,miércoles,Construcción con fútbol,14 km con 2 x 3 km a RM (1 km suave entre bloques),run,14.0,14.0,14.0,60.0,64.0,2026-05-31
+9,2026-05-28,jueves,Construcción con fútbol,Fútbol 6-10 km alta intensidad,football,6.0,10.0,8.0,60.0,64.0,2026-05-31
+9,2026-05-29,viernes,Construcción con fútbol,24 km Z2 tirada larga,run,24.0,24.0,24.0,60.0,64.0,2026-05-31
+9,2026-05-30,sábado,Construcción con fútbol,Descanso + fuerza 30-40',rest,,,,60.0,64.0,2026-05-31
+9,2026-05-31,domingo,Construcción con fútbol,Partido / fútbol 30-90',football,,,,60.0,64.0,2026-05-31
+10,2026-06-01,lunes,Construcción con fútbol,8 km Z2 suave,run,8.0,8.0,8.0,62.0,66.0,2026-06-07
+10,2026-06-02,martes,Construcción con fútbol,Fútbol 6-10 km alta intensidad,football,6.0,10.0,8.0,62.0,66.0,2026-06-07
+10,2026-06-03,miércoles,Construcción con fútbol,14 km progresivo (últimos 5 km a RM controlado),run,14.0,14.0,14.0,62.0,66.0,2026-06-07
+10,2026-06-04,jueves,Construcción con fútbol,Fútbol 6-10 km alta intensidad,football,6.0,10.0,8.0,62.0,66.0,2026-06-07
+10,2026-06-05,viernes,Construcción con fútbol,26 km Z2 tirada larga,run,26.0,26.0,26.0,62.0,66.0,2026-06-07
+10,2026-06-06,sábado,Construcción con fútbol,Descanso + fuerza 30-40',rest,,,,62.0,66.0,2026-06-07
+10,2026-06-07,domingo,Construcción con fútbol,Partido / fútbol 30-90',football,,,,62.0,66.0,2026-06-07
+11,2026-06-08,lunes,Construcción con fútbol,10 km Z2,run,10.0,10.0,10.0,66.0,70.0,2026-06-14
+11,2026-06-09,martes,Construcción con fútbol,Fútbol 6-10 km alta intensidad,football,6.0,10.0,8.0,66.0,70.0,2026-06-14
+11,2026-06-10,miércoles,Construcción con fútbol,16 km con 6 km a RM,run,16.0,16.0,16.0,66.0,70.0,2026-06-14
+11,2026-06-11,jueves,Construcción con fútbol,Fútbol 6-10 km alta intensidad,football,6.0,10.0,8.0,66.0,70.0,2026-06-14
+11,2026-06-12,viernes,Construcción con fútbol,28 km Z2 tirada larga,run,28.0,28.0,28.0,66.0,70.0,2026-06-14
+11,2026-06-13,sábado,Construcción con fútbol,Descanso + fuerza 30-40',rest,,,,66.0,70.0,2026-06-14
+11,2026-06-14,domingo,Construcción con fútbol,Partido / fútbol 30-90',football,,,,66.0,70.0,2026-06-14
+12,2026-06-15,lunes,Construcción con fútbol - descarga,6 km recovery Z1-Z2,run,6.0,6.0,6.0,54.0,58.0,2026-06-21
+12,2026-06-16,martes,Construcción con fútbol - descarga,Fútbol 6-10 km alta intensidad,football,6.0,10.0,8.0,54.0,58.0,2026-06-21
+12,2026-06-17,miércoles,Construcción con fútbol - descarga,12 km Z2 estable,run,12.0,12.0,12.0,54.0,58.0,2026-06-21
+12,2026-06-18,jueves,Construcción con fútbol - descarga,Fútbol 6-10 km alta intensidad,football,6.0,10.0,8.0,54.0,58.0,2026-06-21
+12,2026-06-19,viernes,Construcción con fútbol - descarga,22 km Z2 tirada larga,run,22.0,22.0,22.0,54.0,58.0,2026-06-21
+12,2026-06-20,sábado,Construcción con fútbol - descarga,Descanso + movilidad,rest,,,,54.0,58.0,2026-06-21
+12,2026-06-21,domingo,Construcción con fútbol - descarga,Partido / fútbol 30-90',football,,,,54.0,58.0,2026-06-21
+13,2026-06-22,lunes,Construcción con fútbol,10 km Z2,run,10.0,10.0,10.0,66.0,70.0,2026-06-28
+13,2026-06-23,martes,Construcción con fútbol,Fútbol 6-10 km alta intensidad,football,6.0,10.0,8.0,66.0,70.0,2026-06-28
+13,2026-06-24,miércoles,Construcción con fútbol,16 km progresivo con 8 km a RM controlado,run,16.0,16.0,16.0,66.0,70.0,2026-06-28
+13,2026-06-25,jueves,Construcción con fútbol,Fútbol 6-10 km alta intensidad,football,6.0,10.0,8.0,66.0,70.0,2026-06-28
+13,2026-06-26,viernes,Construcción con fútbol,28 km Z2 tirada larga,run,28.0,28.0,28.0,66.0,70.0,2026-06-28
+13,2026-06-27,sábado,Construcción con fútbol,Descanso + fuerza 30-40',rest,,,,66.0,70.0,2026-06-28
+13,2026-06-28,domingo,Construcción con fútbol,Partido / fútbol 30-90',football,,,,66.0,70.0,2026-06-28
+14,2026-06-29,lunes,Específica verano sin fútbol,8 km Z2 suave,run,8.0,8.0,8.0,66.0,66.0,2026-07-05
+14,2026-06-30,martes,Específica verano sin fútbol,Series 5 x 1 km a ritmo 10K controlado (total 10 km),run,10.0,10.0,10.0,66.0,66.0,2026-07-05
+14,2026-07-01,miércoles,Específica verano sin fútbol,6 km recovery Z1-Z2,run,6.0,6.0,6.0,66.0,66.0,2026-07-05
+14,2026-07-02,jueves,Específica verano sin fútbol,10 km tempo suave (2 + 6 tempo + 2),run,10.0,10.0,10.0,66.0,66.0,2026-07-05
+14,2026-07-03,viernes,Específica verano sin fútbol,8 km Z2,run,8.0,8.0,8.0,66.0,66.0,2026-07-05
+14,2026-07-04,sábado,Específica verano sin fútbol,Descanso + movilidad,rest,,,,66.0,66.0,2026-07-05
+14,2026-07-05,domingo,Específica verano sin fútbol,24 km Z2 tirada larga,run,24.0,24.0,24.0,66.0,66.0,2026-07-05
+15,2026-07-06,lunes,Específica verano sin fútbol,8 km Z2 suave,run,8.0,8.0,8.0,69.0,69.0,2026-07-12
+15,2026-07-07,martes,Específica verano sin fútbol,Series 6 x 1 km a ritmo 10K controlado (total 11 km),run,11.0,11.0,11.0,69.0,69.0,2026-07-12
+15,2026-07-08,miércoles,Específica verano sin fútbol,6 km recovery Z1-Z2,run,6.0,6.0,6.0,69.0,69.0,2026-07-12
+15,2026-07-09,jueves,Específica verano sin fútbol,10 km con 6 km tempo / umbral bajo,run,10.0,10.0,10.0,69.0,69.0,2026-07-12
+15,2026-07-10,viernes,Específica verano sin fútbol,8 km Z2,run,8.0,8.0,8.0,69.0,69.0,2026-07-12
+15,2026-07-11,sábado,Específica verano sin fútbol,Descanso + movilidad,rest,,,,69.0,69.0,2026-07-12
+15,2026-07-12,domingo,Específica verano sin fútbol,26 km Z2 tirada larga,run,26.0,26.0,26.0,69.0,69.0,2026-07-12
+16,2026-07-13,lunes,Específica verano sin fútbol - descarga,6 km Z2,run,6.0,6.0,6.0,56.0,56.0,2026-07-19
+16,2026-07-14,martes,Específica verano sin fútbol - descarga,Series 4 x 800 m controladas (total 8 km),run,8.0,8.0,8.0,56.0,56.0,2026-07-19
+16,2026-07-15,miércoles,Específica verano sin fútbol - descarga,6 km recovery Z1-Z2,run,6.0,6.0,6.0,56.0,56.0,2026-07-19
+16,2026-07-16,jueves,Específica verano sin fútbol - descarga,8 km con 4 km tempo,run,8.0,8.0,8.0,56.0,56.0,2026-07-19
+16,2026-07-17,viernes,Específica verano sin fútbol - descarga,8 km Z2,run,8.0,8.0,8.0,56.0,56.0,2026-07-19
+16,2026-07-18,sábado,Específica verano sin fútbol - descarga,Descanso + movilidad,rest,,,,56.0,56.0,2026-07-19
+16,2026-07-19,domingo,Específica verano sin fútbol - descarga,20 km Z2 tirada larga,run,20.0,20.0,20.0,56.0,56.0,2026-07-19
+17,2026-07-20,lunes,Específica verano sin fútbol,8 km Z2,run,8.0,8.0,8.0,70.0,70.0,2026-07-26
+17,2026-07-21,martes,Específica verano sin fútbol,Series 4 x 1200 m a ritmo 10K controlado (total 10 km),run,10.0,10.0,10.0,70.0,70.0,2026-07-26
+17,2026-07-22,miércoles,Específica verano sin fútbol,6 km recovery Z1-Z2,run,6.0,6.0,6.0,70.0,70.0,2026-07-26
+17,2026-07-23,jueves,Específica verano sin fútbol,10 km con 6 km a RM,run,10.0,10.0,10.0,70.0,70.0,2026-07-26
+17,2026-07-24,viernes,Específica verano sin fútbol,8 km Z2,run,8.0,8.0,8.0,70.0,70.0,2026-07-26
+17,2026-07-25,sábado,Específica verano sin fútbol,Descanso + movilidad,rest,,,,70.0,70.0,2026-07-26
+17,2026-07-26,domingo,Específica verano sin fútbol,28 km Z2 tirada larga,run,28.0,28.0,28.0,70.0,70.0,2026-07-26
+18,2026-07-27,lunes,Específica verano sin fútbol,8 km Z2,run,8.0,8.0,8.0,66.0,66.0,2026-08-02
+18,2026-07-28,martes,Específica verano sin fútbol,Series 3 x 2 km a ritmo media maratón controlado (total 10 km),race,10.0,10.0,10.0,66.0,66.0,2026-08-02
+18,2026-07-29,miércoles,Específica verano sin fútbol,6 km recovery Z1-Z2,run,6.0,6.0,6.0,66.0,66.0,2026-08-02
+18,2026-07-30,jueves,Específica verano sin fútbol,10 km progresivo hasta RM,run,10.0,10.0,10.0,66.0,66.0,2026-08-02
+18,2026-07-31,viernes,Específica verano sin fútbol,8 km Z2,run,8.0,8.0,8.0,66.0,66.0,2026-08-02
+18,2026-08-01,sábado,Específica verano sin fútbol,Descanso + movilidad,rest,,,,66.0,66.0,2026-08-02
+18,2026-08-02,domingo,Específica verano sin fútbol,24 km con 2 x 4 km a RM dentro,run,24.0,24.0,24.0,66.0,66.0,2026-08-02
+19,2026-08-03,lunes,Específica verano sin fútbol,8 km Z2,run,8.0,8.0,8.0,74.0,74.0,2026-08-09
+19,2026-08-04,martes,Específica verano sin fútbol,Series 5 x 1 km a ritmo 10K controlado (total 10 km),run,10.0,10.0,10.0,74.0,74.0,2026-08-09
+19,2026-08-05,miércoles,Específica verano sin fútbol,6 km recovery Z1-Z2,run,6.0,6.0,6.0,74.0,74.0,2026-08-09
+19,2026-08-06,jueves,Específica verano sin fútbol,14 km con 10 km tempo / RM,run,14.0,14.0,14.0,74.0,74.0,2026-08-09
+19,2026-08-07,viernes,Específica verano sin fútbol,8 km Z2,run,8.0,8.0,8.0,74.0,74.0,2026-08-09
+19,2026-08-08,sábado,Específica verano sin fútbol,Descanso + movilidad,rest,,,,74.0,74.0,2026-08-09
+19,2026-08-09,domingo,Específica verano sin fútbol,30 km Z2 con últimos 6 km a RM,run,30.0,30.0,30.0,74.0,74.0,2026-08-09
+20,2026-08-10,lunes,Específica verano sin fútbol - descarga,6 km Z2,run,6.0,6.0,6.0,60.0,60.0,2026-08-16
+20,2026-08-11,martes,Específica verano sin fútbol - descarga,Series 5 x 800 m controladas (total 8 km),run,8.0,8.0,8.0,60.0,60.0,2026-08-16
+20,2026-08-12,miércoles,Específica verano sin fútbol - descarga,6 km recovery Z1-Z2,run,6.0,6.0,6.0,60.0,60.0,2026-08-16
+20,2026-08-13,jueves,Específica verano sin fútbol - descarga,8 km con 4 km tempo,run,8.0,8.0,8.0,60.0,60.0,2026-08-16
+20,2026-08-14,viernes,Específica verano sin fútbol - descarga,8 km Z2,run,8.0,8.0,8.0,60.0,60.0,2026-08-16
+20,2026-08-15,sábado,Específica verano sin fútbol - descarga,Descanso + movilidad,rest,,,,60.0,60.0,2026-08-16
+20,2026-08-16,domingo,Específica verano sin fútbol - descarga,24 km Z2 tirada larga,run,24.0,24.0,24.0,60.0,60.0,2026-08-16
+21,2026-08-17,lunes,Específica verano sin fútbol - pico,8 km Z2,run,8.0,8.0,8.0,76.0,76.0,2026-08-23
+21,2026-08-18,martes,Específica verano sin fútbol - pico,Series 3 x 2 km a ritmo media maratón / RM alto (total 12 km),race,12.0,12.0,12.0,76.0,76.0,2026-08-23
+21,2026-08-19,miércoles,Específica verano sin fútbol - pico,6 km recovery Z1-Z2,run,6.0,6.0,6.0,76.0,76.0,2026-08-23
+21,2026-08-20,jueves,Específica verano sin fútbol - pico,10 km con 6 km a RM,run,10.0,10.0,10.0,76.0,76.0,2026-08-23
+21,2026-08-21,viernes,Específica verano sin fútbol - pico,8 km Z2,run,8.0,8.0,8.0,76.0,76.0,2026-08-23
+21,2026-08-22,sábado,Específica verano sin fútbol - pico,Descanso + movilidad,rest,,,,76.0,76.0,2026-08-23
+21,2026-08-23,domingo,Específica verano sin fútbol - pico,32 km Z2 progresivo con últimos 8 km a RM,run,32.0,32.0,32.0,76.0,76.0,2026-08-23
+22,2026-08-24,lunes,Específica verano sin fútbol,8 km Z2,run,8.0,8.0,8.0,70.0,70.0,2026-08-30
+22,2026-08-25,martes,Específica verano sin fútbol,Series 8 x 800 m a ritmo 10K controlado (total 10 km),run,10.0,10.0,10.0,70.0,70.0,2026-08-30
+22,2026-08-26,miércoles,Específica verano sin fútbol,6 km recovery Z1-Z2,run,6.0,6.0,6.0,70.0,70.0,2026-08-30
+22,2026-08-27,jueves,Específica verano sin fútbol,10 km tempo continuo,run,10.0,10.0,10.0,70.0,70.0,2026-08-30
+22,2026-08-28,viernes,Específica verano sin fútbol,8 km Z2,run,8.0,8.0,8.0,70.0,70.0,2026-08-30
+22,2026-08-29,sábado,Específica verano sin fútbol,Descanso + movilidad,rest,,,,70.0,70.0,2026-08-30
+22,2026-08-30,domingo,Específica verano sin fútbol,28 km Z2 tirada larga,run,28.0,28.0,28.0,70.0,70.0,2026-08-30
+23,2026-08-31,lunes,Construcción específica con fútbol,8 km Z2,run,8.0,8.0,8.0,62.0,66.0,2026-09-06
+23,2026-09-01,martes,Construcción específica con fútbol,Fútbol 6-10 km alta intensidad,football,6.0,10.0,8.0,62.0,66.0,2026-09-06
+23,2026-09-02,miércoles,Construcción específica con fútbol,14 km con 2 x 4 km a RM (1 km suave entre bloques),run,14.0,14.0,14.0,62.0,66.0,2026-09-06
+23,2026-09-03,jueves,Construcción específica con fútbol,Fútbol 6-10 km alta intensidad,football,6.0,10.0,8.0,62.0,66.0,2026-09-06
+23,2026-09-04,viernes,Construcción específica con fútbol,26 km Z2 tirada larga,run,26.0,26.0,26.0,62.0,66.0,2026-09-06
+23,2026-09-05,sábado,Construcción específica con fútbol,Descanso + movilidad,rest,,,,62.0,66.0,2026-09-06
+23,2026-09-06,domingo,Construcción específica con fútbol,Partido / fútbol 30-90',football,,,,62.0,66.0,2026-09-06
+24,2026-09-07,lunes,Construcción específica con fútbol,8 km Z2,run,8.0,8.0,8.0,68.0,72.0,2026-09-13
+24,2026-09-08,martes,Construcción específica con fútbol,Fútbol 6-10 km alta intensidad,football,6.0,10.0,8.0,68.0,72.0,2026-09-13
+24,2026-09-09,miércoles,Construcción específica con fútbol,16 km con 10 km a RM,run,16.0,16.0,16.0,68.0,72.0,2026-09-13
+24,2026-09-10,jueves,Construcción específica con fútbol,Fútbol 6-10 km alta intensidad,football,6.0,10.0,8.0,68.0,72.0,2026-09-13
+24,2026-09-11,viernes,Construcción específica con fútbol,30 km Z2 con últimos 8 km a RM,run,30.0,30.0,30.0,68.0,72.0,2026-09-13
+24,2026-09-12,sábado,Construcción específica con fútbol,Descanso + movilidad,rest,,,,68.0,72.0,2026-09-13
+24,2026-09-13,domingo,Construcción específica con fútbol,Partido / fútbol 30-90',football,,,,68.0,72.0,2026-09-13
+25,2026-09-14,lunes,Taper 1,6 km Z2 suave,run,6.0,6.0,6.0,54.0,58.0,2026-09-20
+25,2026-09-15,martes,Taper 1,Fútbol 6-10 km alta intensidad,football,6.0,10.0,8.0,54.0,58.0,2026-09-20
+25,2026-09-16,miércoles,Taper 1,12 km con 6 km a RM,run,12.0,12.0,12.0,54.0,58.0,2026-09-20
+25,2026-09-17,jueves,Taper 1,Fútbol 6-10 km alta intensidad,football,6.0,10.0,8.0,54.0,58.0,2026-09-20
+25,2026-09-18,viernes,Taper 1,24 km Z2 tirada larga,run,24.0,24.0,24.0,54.0,58.0,2026-09-20
+25,2026-09-19,sábado,Taper 1,Descanso + movilidad,rest,,,,54.0,58.0,2026-09-20
+25,2026-09-20,domingo,Taper 1,Partido / fútbol 30-90',football,,,,54.0,58.0,2026-09-20
+26,2026-09-21,lunes,Taper 2,6 km Z1-Z2,run,6.0,6.0,6.0,46.0,50.0,2026-09-27
+26,2026-09-22,martes,Taper 2,Fútbol 6-10 km alta intensidad,football,6.0,10.0,8.0,46.0,50.0,2026-09-27
+26,2026-09-23,miércoles,Taper 2,10 km con 4 km a RM,run,10.0,10.0,10.0,46.0,50.0,2026-09-27
+26,2026-09-24,jueves,Taper 2,Fútbol 6-10 km alta intensidad,football,6.0,10.0,8.0,46.0,50.0,2026-09-27
+26,2026-09-25,viernes,Taper 2,18 km Z2 tirada larga,run,18.0,18.0,18.0,46.0,50.0,2026-09-27
+26,2026-09-26,sábado,Taper 2,Descanso + movilidad,rest,,,,46.0,50.0,2026-09-27
+26,2026-09-27,domingo,Taper 2,Partido / fútbol 30-90',football,,,,46.0,50.0,2026-09-27
+27,2026-09-28,lunes,Taper 3,5-6 km recovery Z1-Z2,run,5.0,6.0,5.5,34.0,40.0,2026-10-04
+27,2026-09-29,martes,Taper 3,Fútbol 6-10 km alta intensidad,football,6.0,10.0,8.0,34.0,40.0,2026-10-04
+27,2026-09-30,miércoles,Taper 3,8 km con 3 km a RM,run,8.0,8.0,8.0,34.0,40.0,2026-10-04
+27,2026-10-01,jueves,Taper 3,Fútbol 6-10 km alta intensidad,football,6.0,10.0,8.0,34.0,40.0,2026-10-04
+27,2026-10-02,viernes,Taper 3,12 km Z2 tirada larga,run,12.0,12.0,12.0,34.0,40.0,2026-10-04
+27,2026-10-03,sábado,Taper 3,Descanso + movilidad,rest,,,,34.0,40.0,2026-10-04
+27,2026-10-04,domingo,Taper 3,"Partido / fútbol 30-60' si es posible; si no, partido completo",football,,,,34.0,40.0,2026-10-04
+28,2026-10-05,lunes,Semana de carrera,5 km muy suave + movilidad,strength_mobility,5.0,5.0,5.0,66.0,74.0,2026-10-11
+28,2026-10-06,martes,Semana de carrera,Fútbol (solo obligatorio; sin extras ni gimnasio),football,,,,66.0,74.0,2026-10-11
+28,2026-10-07,miércoles,Semana de carrera,6 km suave con 4 x 20'' alegres,run,6.0,6.0,6.0,66.0,74.0,2026-10-11
+28,2026-10-08,jueves,Semana de carrera,Fútbol (solo obligatorio; salir antes si existe margen),football,,,,66.0,74.0,2026-10-11
+28,2026-10-09,viernes,Semana de carrera,5 km muy suaves,run,5.0,5.0,5.0,66.0,74.0,2026-10-11
+28,2026-10-10,sábado,Semana de carrera,Descanso total,rest,,,,66.0,74.0,2026-10-11
+28,2026-10-11,domingo,Semana de carrera,MARATÓN EINDHOVEN 42.2 km,race,42.2,42.2,42.2,66.0,74.0,2026-10-11

@@ -1,1 +1,4 @@
 .env
+logs/
+strava_sync/strava_tokens.json
+strava_sync/sync_state.json

@@ -1,11 +1,31 @@
 import argparse
+import json
+import logging
 import re
+import shutil
+from datetime import datetime
 from pathlib import Path
 
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 from sklearn.linear_model import LinearRegression
+
+BASE_DIR = Path(__file__).resolve().parent
+LOG_DIR = BASE_DIR / "logs"
+LOG_PATH = LOG_DIR / "analysis.log"
+
+
+def setup_logging() -> None:
+    LOG_DIR.mkdir(parents=True, exist_ok=True)
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s [%(levelname)s] %(message)s",
+        handlers=[
+            logging.FileHandler(LOG_PATH, encoding="utf-8"),
+            logging.StreamHandler(),
+        ],
+    )
 
 
 def parse_args() -> argparse.Namespace:
@@ -25,7 +45,13 @@ def parse_args() -> argparse.Namespace:
         default="plan_maraton_hibrido_corregido.csv",
         help="Path to marathon training plan CSV",
     )
+    parser.add_argument(
+        "--plan-pdf",
+        default="plan_maraton_hibrido_visual.pdf",
+        help="Path to training plan PDF for website",
+    )
     parser.add_argument("--outdir", default="analysis_output", help="Output folder")
+    parser.add_argument("--site-dir", default="docs", help="GitHub Pages output directory")
     return parser.parse_args()
 
 
@@ -508,6 +534,171 @@ def format_hms(minutes: float) -> str:
     return f"{h:02d}:{m:02d}:{s:02d}" if h > 0 else f"{m:02d}:{s:02d}"
 
 
+def _escape_html(text: str) -> str:
+    return (
+        str(text)
+        .replace("&", "&amp;")
+        .replace("<", "&lt;")
+        .replace(">", "&gt;")
+        .replace('"', "&quot;")
+    )
+
+
+def write_html_report(
+    outdir: Path,
+    markdown_lines: list[str],
+    weekly: pd.DataFrame,
+    plan_compare: pd.DataFrame,
+    targets: pd.DataFrame,
+) -> None:
+    images = [
+        "running_progression.png",
+        "pace_hr_trend.png",
+        "combined_stress_trend.png",
+        "marathon_projection_band.png",
+        "goal_gap_dashboard.png",
+        "plan_adherence_dashboard.png",
+    ]
+
+    # Basic markdown-like to HTML conversion (headings + bullets + paragraphs).
+    body_parts: list[str] = []
+    in_list = False
+    for raw in markdown_lines:
+        line = raw.rstrip()
+        stripped = line.strip()
+        if stripped == "":
+            if in_list:
+                body_parts.append("</ul>")
+                in_list = False
+            continue
+        if stripped.startswith("## "):
+            if in_list:
+                body_parts.append("</ul>")
+                in_list = False
+            body_parts.append(f"<h2>{_escape_html(stripped[3:])}</h2>")
+            continue
+        if stripped.startswith("# "):
+            if in_list:
+                body_parts.append("</ul>")
+                in_list = False
+            body_parts.append(f"<h1>{_escape_html(stripped[2:])}</h1>")
+            continue
+        if stripped.startswith("- "):
+            if not in_list:
+                body_parts.append("<ul>")
+                in_list = True
+            body_parts.append(f"<li>{_escape_html(stripped[2:])}</li>")
+            continue
+        if in_list:
+            body_parts.append("</ul>")
+            in_list = False
+        body_parts.append(f"<p>{_escape_html(stripped)}</p>")
+    if in_list:
+        body_parts.append("</ul>")
+
+    weekly_table = (
+        weekly.sort_values("week").to_html(index=False, classes="tbl", border=0)
+        if not weekly.empty
+        else "<p>No weekly metrics available.</p>"
+    )
+    plan_table = (
+        plan_compare.sort_values("week").to_html(index=False, classes="tbl", border=0)
+        if not plan_compare.empty
+        else "<p>No plan-vs-actual data yet.</p>"
+    )
+    target_table = (
+        targets.sort_values("week").to_html(index=False, classes="tbl", border=0)
+        if not targets.empty
+        else "<p>No target ranges available.</p>"
+    )
+
+    img_html = []
+    for img in images:
+        p = outdir / img
+        if p.exists():
+            img_html.append(
+                f"<div class='card'><h3>{_escape_html(img)}</h3><img src='{_escape_html(img)}' alt='{_escape_html(img)}'></div>"
+            )
+    visuals = "\n".join(img_html) if img_html else "<p>No visuals available.</p>"
+
+    html = f"""<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reporte de Analisis</title>
+  <style>
+    body {{ font-family: Arial, sans-serif; margin: 24px; color: #111; }}
+    h1, h2, h3 {{ margin-top: 24px; }}
+    .tbl {{ border-collapse: collapse; width: 100%; margin: 12px 0 20px; font-size: 13px; }}
+    .tbl th, .tbl td {{ border: 1px solid #ddd; padding: 6px 8px; text-align: left; }}
+    .tbl th {{ background: #f5f5f5; }}
+    .grid {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 16px; }}
+    .card {{ border: 1px solid #ddd; border-radius: 8px; padding: 10px; }}
+    img {{ width: 100%; height: auto; border: 1px solid #eee; }}
+    .meta {{ color: #666; font-size: 12px; margin-bottom: 12px; }}
+  </style>
+</head>
+<body>
+  <p class="meta">Generado: {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}</p>
+  {''.join(body_parts)}
+  <h2>Visuales</h2>
+  <div class="grid">{visuals}</div>
+  <h2>Tabla semanal (actual)</h2>
+  {weekly_table}
+  <h2>Plan vs actual</h2>
+  {plan_table}
+  <h2>Rangos objetivo hasta octubre</h2>
+  {target_table}
+</body>
+</html>
+"""
+    (outdir / "report.html").write_text(html, encoding="utf-8")
+
+
+def publish_github_pages(outdir: Path, site_dir: Path, plan_pdf_path: Path) -> None:
+    site_assets = site_dir / "assets"
+    site_data = site_dir / "data"
+    site_assets.mkdir(parents=True, exist_ok=True)
+    site_data.mkdir(parents=True, exist_ok=True)
+
+    asset_files = [
+        "running_progression.png",
+        "pace_hr_trend.png",
+        "combined_stress_trend.png",
+        "marathon_projection_band.png",
+        "goal_gap_dashboard.png",
+        "plan_adherence_dashboard.png",
+    ]
+    data_files = [
+        "weekly_metrics.csv",
+        "plan_vs_actual.csv",
+        "target_ranges_to_october.csv",
+        "plan_limpio_sesiones.csv",
+        "plan_limpio_semanal.csv",
+        "report.md",
+    ]
+
+    for name in asset_files:
+        src = outdir / name
+        if src.exists():
+            shutil.copy2(src, site_assets / name)
+    for name in data_files:
+        src = outdir / name
+        if src.exists():
+            shutil.copy2(src, site_data / name)
+
+    if plan_pdf_path.exists():
+        shutil.copy2(plan_pdf_path, site_assets / "plan_entrenamiento.pdf")
+
+    meta = {
+        "generated_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "source_outdir": str(outdir.resolve()),
+        "has_plan_pdf": plan_pdf_path.exists(),
+    }
+    (site_data / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
 def ml_projection_to_october(
     weekly: pd.DataFrame,
 ) -> tuple[float | None, float | None, int | None, int]:
@@ -957,6 +1148,7 @@ def build_report(
     lines.append("")
     lines.append("## Files generated")
     lines.append("- report.md")
+    lines.append("- report.html")
     lines.append("- weekly_metrics.csv")
     lines.append("- running_progression.png")
     lines.append("- pace_hr_trend.png")
@@ -977,15 +1169,20 @@ def build_report(
         plan_compare.to_csv(outdir / "plan_vs_actual.csv", index=False)
     if not targets.empty:
         targets.to_csv(outdir / "target_ranges_to_october.csv", index=False)
+    write_html_report(outdir, lines, weekly, plan_compare, targets)
     return report
 
 
 def main() -> None:
+    setup_logging()
     args = parse_args()
     football_path = Path(args.football)
     strava_path = Path(args.strava)
     plan_path = Path(args.plan)
+    plan_pdf_path = Path(args.plan_pdf)
     outdir = Path(args.outdir)
+    site_dir = Path(args.site_dir)
+    logging.info("Inicio analisis. football=%s strava=%s plan=%s outdir=%s", football_path, strava_path, plan_path, outdir)
 
     if not football_path.exists():
         raise FileNotFoundError(f"Football CSV not found: {football_path}")
@@ -1000,14 +1197,26 @@ def main() -> None:
     football = prep_football(football_path, start, end)
     runs = prep_runs(strava_path, start, end)
     weekly = aggregate_weekly(football, runs)
+    logging.info("Datos cargados. sesiones_football=%d runs=%d semanas=%d", len(football), len(runs), len(weekly))
     plan_clean, weekly_plan = clean_training_plan(plan_path, outdir)
     plan_compare = plan_vs_actual_weekly(weekly, weekly_plan)
     targets, _ = build_october_goal_targets(weekly, end)
     bands = marathon_prediction_bands(runs, end)
+    logging.info(
+        "Plan procesado. sesiones_plan=%d semanas_plan=%d plan_vs_actual=%d targets=%d",
+        len(plan_clean),
+        len(weekly_plan),
+        len(plan_compare),
+        len(targets),
+    )
 
     outdir.mkdir(parents=True, exist_ok=True)
     save_plots(weekly, runs, outdir, targets, bands, plan_compare)
     _ = build_report(football, runs, weekly, targets, plan_clean, plan_compare, start, end, outdir)
+    publish_github_pages(outdir, site_dir, plan_pdf_path)
+    logging.info("Archivos generados en %s", outdir.resolve())
+    logging.info("Sitio GitHub Pages actualizado en %s", site_dir.resolve())
+    logging.info("Log guardado en %s", LOG_PATH.resolve())
 
     print("Analysis complete.")
     print(f"Output folder: {outdir.resolve()}")

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard Progreso Maratón</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <div>
+      <h1>Progreso Maratón + Fútbol</h1>
+      <p id="meta">Cargando datos...</p>
+    </div>
+    <div class="links">
+      <a href="data/report.md" target="_blank" rel="noopener noreferrer">Reporte markdown</a>
+      <a href="assets/plan_entrenamiento.pdf" target="_blank" rel="noopener noreferrer">Plan PDF</a>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Resumen</h2>
+      <div id="kpis" class="kpis"></div>
+    </section>
+
+    <section>
+      <h2>Gráficos</h2>
+      <div class="grid">
+        <article class="card"><h3>Volumen running</h3><img src="assets/running_progression.png" alt="running progression"></article>
+        <article class="card"><h3>Pace + FC</h3><img src="assets/pace_hr_trend.png" alt="pace hr trend"></article>
+        <article class="card"><h3>Estrés combinado</h3><img src="assets/combined_stress_trend.png" alt="combined stress"></article>
+        <article class="card"><h3>Banda proyección maratón</h3><img src="assets/marathon_projection_band.png" alt="marathon band"></article>
+        <article class="card"><h3>Gap hacia octubre</h3><img src="assets/goal_gap_dashboard.png" alt="goal gap"></article>
+        <article class="card"><h3>Adherencia al plan</h3><img src="assets/plan_adherence_dashboard.png" alt="plan adherence"></article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Plan vs Real (semanal)</h2>
+      <div id="planTable"></div>
+    </section>
+
+    <section>
+      <h2>Métricas semanales</h2>
+      <div id="weeklyTable"></div>
+    </section>
+
+    <section>
+      <h2>Rangos objetivo hasta octubre</h2>
+      <div id="targetsTable"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
