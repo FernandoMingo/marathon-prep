@@ -1,4 +1,4 @@
-# Analisis Futbol + Maraton
+# Analisis Futbol + Maraton (VIBE CODED AS HELL)
 
 Proyecto para unificar:
 - sesiones de futbol (GPS/carga),
