@@ -1,10 +1,9 @@
-# Analisis Futbol + Maraton (VIBE CODED AS HELL)
+# Analisis de Rendimiento Deportivo 
 
 Proyecto para unificar:
 - sesiones de futbol (GPS/carga),
 - actividades de Strava (desde Garmin via sync),
-- plan de maraton,
-- y publicar un dashboard en GitHub Pages.
+- plan de maraton
 
 ## Estructura
 
@@ -55,11 +54,3 @@ powershell -ExecutionPolicy Bypass -File setup_strava_task.ps1
 - Configurable en `.env`:
   - `GITHUB_AUTO_PUBLISH=1` (o `0` para desactivar).
 
-## Publicar en GitHub Pages
-
-En GitHub:
-1. `Settings` -> `Pages`
-2. Source: `Deploy from a branch`
-3. Branch: `main` y carpeta `/docs`
-
-El dashboard quedara en la URL de Pages del repo.

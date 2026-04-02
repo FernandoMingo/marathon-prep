@@ -18,55 +18,160 @@
     </div>
   </header>
 
+  <nav class="feedNav">
+    <button class="feedBtn" data-feed="run">Run Only</button>
+    <button class="feedBtn active" data-feed="combined">Combined Analysis</button>
+    <button class="feedBtn" data-feed="football">Football Only</button>
+  </nav>
+
   <main>
-    <section>
-      <h2>Resumen</h2>
-      <div id="kpis" class="kpis"></div>
+    <section class="overview">
+      <h2 class="sectionTitle">At a glance</h2>
+      <div id="quickGlance" class="kpis quickGlance"></div>
     </section>
 
-    <section>
-      <h2>Análisis Solo Fútbol</h2>
-      <div id="footballAnalysis" class="kpis"></div>
-    </section>
-
-    <section>
-      <h2>Análisis Solo Running</h2>
-      <div id="runningAnalysis" class="kpis"></div>
-    </section>
-
-    <section>
-      <h2>Análisis Combinado Fútbol + Running</h2>
-      <div id="combinedAnalysis" class="kpis"></div>
-    </section>
-
-    <section>
-      <h2>Gráficos</h2>
-      <div class="grid">
-        <article class="card"><h3>Volumen running</h3><img src="assets/running_progression.png" alt="running progression"></article>
-        <article class="card"><h3>Pace + FC</h3><img src="assets/pace_hr_trend.png" alt="pace hr trend"></article>
-        <article class="card"><h3>Estrés combinado</h3><img src="assets/combined_stress_trend.png" alt="combined stress"></article>
-        <article class="card"><h3>Banda proyección maratón</h3><img src="assets/marathon_projection_band.png" alt="marathon band"></article>
-        <article class="card"><h3>Gap hacia octubre</h3><img src="assets/goal_gap_dashboard.png" alt="goal gap"></article>
-        <article class="card"><h3>Adherencia al plan</h3><img src="assets/plan_adherence_dashboard.png" alt="plan adherence"></article>
+    <section class="feed feed-run visible">
+      <div class="primaryLayout">
+        <article class="panel">
+          <h2 class="sectionTitle">Key numbers <button class="infoBtn" data-help="run-summary" aria-label="Info this week">i</button></h2>
+          <div id="thisWeekAnalysis" class="kpis kpis-primary"></div>
+        </article>
+        <article class="panel">
+          <h2 class="sectionTitle">Key visualizations <button class="infoBtn" data-help="run-visuals" aria-label="Info visuales running">i</button></h2>
+          <div class="heroCharts">
+            <article class="card"><h3 class="sectionTitle">Volumen running <button class="infoBtn" data-help="run-volume-chart" aria-label="Info volumen running">i</button></h3><img class="chartImage" data-chart-title="Volumen running" src="assets/running_progression.png" alt="running progression"></article>
+            <article class="card"><h3 class="sectionTitle">Banda proyección maratón <button class="infoBtn" data-help="run-marathon-band-chart" aria-label="Info proyeccion maraton">i</button></h3><img class="chartImage" data-chart-title="Banda proyección maratón" src="assets/marathon_projection_band.png" alt="marathon band"></article>
+          </div>
+        </article>
       </div>
+
+      <details class="detailPanel">
+        <summary>Show extra running metrics</summary>
+        <div class="detailBody">
+          <div id="runningAnalysis" class="kpis"></div>
+        </div>
+      </details>
+
+      <details class="detailPanel">
+        <summary>Show additional running visualization</summary>
+        <div class="detailBody">
+          <div class="grid">
+            <article class="card"><h3 class="sectionTitle">Pace + FC <button class="infoBtn" data-help="run-pace-hr-chart" aria-label="Info pace y frecuencia cardiaca">i</button></h3><img class="chartImage" data-chart-title="Pace + FC" src="assets/pace_hr_trend.png" alt="pace hr trend"></article>
+          </div>
+        </div>
+      </details>
+
+      <details class="detailPanel">
+        <summary>Show interpretation notes</summary>
+        <div class="detailBody">
+          <article class="card">
+            <h3>What this means</h3>
+            <div id="runNarrative"></div>
+          </article>
+        </div>
+      </details>
+
+      <details class="detailPanel">
+        <summary>Open weekly running table</summary>
+        <div class="detailBody">
+          <div id="weeklyTable"></div>
+        </div>
+      </details>
+
+      <details class="detailPanel">
+        <summary>Open running targets table (to October)</summary>
+        <div class="detailBody">
+          <div id="targetsTable"></div>
+        </div>
+      </details>
     </section>
 
-    <section>
-      <h2>Plan vs Real (semanal)</h2>
-      <div id="planTable"></div>
+    <section class="feed feed-combined">
+      <div class="primaryLayout">
+        <article class="panel">
+          <h2 class="sectionTitle">Key numbers <button class="infoBtn" data-help="combined-summary" aria-label="Info load and fatigue">i</button></h2>
+          <div id="combinedAnalysis" class="kpis kpis-primary"></div>
+          <div class="panelDivider"></div>
+          <h3 class="sectionTitle">Prediction snapshot <button class="infoBtn" data-help="predictions-summary" aria-label="Info predictions">i</button></h3>
+          <div id="predictionsAnalysis" class="kpis"></div>
+        </article>
+        <article class="panel">
+          <h2 class="sectionTitle">Key visualizations <button class="infoBtn" data-help="combined-visuals" aria-label="Info visuales combinados">i</button></h2>
+          <div class="heroCharts">
+            <article class="card"><h3 class="sectionTitle">Estrés combinado <button class="infoBtn" data-help="combined-stress-chart" aria-label="Info estres combinado">i</button></h3><img class="chartImage" data-chart-title="Estrés combinado" src="assets/combined_stress_trend.png" alt="combined stress"></article>
+            <article class="card"><h3 class="sectionTitle">Gap hacia octubre <button class="infoBtn" data-help="combined-gap-chart" aria-label="Info gap a octubre">i</button></h3><img class="chartImage" data-chart-title="Gap hacia octubre" src="assets/goal_gap_dashboard.png" alt="goal gap"></article>
+          </div>
+        </article>
+      </div>
+
+      <details class="detailPanel">
+        <summary>Show interpretation and confidence details</summary>
+        <div class="detailBody">
+          <div id="predictionsDetails" class="kpis"></div>
+          <article class="card">
+            <h3>What this means</h3>
+            <div id="combinedNarrative"></div>
+          </article>
+          <article class="card">
+            <h3 class="sectionTitle">Confidence notes <button class="infoBtn" data-help="predictions-confidence" aria-label="Info confidence">i</button></h3>
+            <div id="confidenceNotes"></div>
+          </article>
+        </div>
+      </details>
+
+      <details class="detailPanel">
+        <summary>Show additional combined visualization</summary>
+        <div class="detailBody">
+          <div class="grid">
+            <article class="card"><h3 class="sectionTitle">Adherencia al plan <button class="infoBtn" data-help="combined-adherence-chart" aria-label="Info adherencia al plan">i</button></h3><img class="chartImage" data-chart-title="Adherencia al plan" src="assets/plan_adherence_dashboard.png" alt="plan adherence"></article>
+          </div>
+        </div>
+      </details>
+
+      <details class="detailPanel">
+        <summary>Open plan vs actual table</summary>
+        <div class="detailBody">
+          <div id="planTable"></div>
+        </div>
+      </details>
     </section>
 
-    <section>
-      <h2>Métricas semanales</h2>
-      <div id="weeklyTable"></div>
-    </section>
+    <section class="feed feed-football">
+      <div class="primaryLayout">
+        <article class="panel">
+          <h2 class="sectionTitle">Key numbers <button class="infoBtn" data-help="football-summary" aria-label="Info resumen futbol">i</button></h2>
+          <div id="footballAnalysis" class="kpis kpis-primary"></div>
+        </article>
+        <article class="panel">
+          <h2 class="sectionTitle">Impact snapshot <button class="infoBtn" data-help="football-impact" aria-label="Info football impact">i</button></h2>
+          <div id="footballImpactMessage"></div>
+        </article>
+      </div>
 
-    <section>
-      <h2>Rangos objetivo hasta octubre</h2>
-      <div id="targetsTable"></div>
+      <details class="detailPanel">
+        <summary>Open weekly football table</summary>
+        <div class="detailBody">
+          <div id="footballTable"></div>
+        </div>
+      </details>
     </section>
   </main>
 
-  <script src="app.js"></script>
+  <div id="helpModal" class="modal" aria-hidden="true">
+    <div class="modalCard" role="dialog" aria-modal="true" aria-labelledby="helpTitle">
+      <button id="helpClose" class="modalClose" aria-label="Cerrar ayuda">×</button>
+      <h3 id="helpTitle">Ayuda</h3>
+      <p id="helpBody"></p>
+    </div>
+  </div>
+  <div id="chartModal" class="modal" aria-hidden="true">
+    <div class="modalCard chartModalCard" role="dialog" aria-modal="true" aria-labelledby="chartTitle">
+      <button id="chartClose" class="modalClose" aria-label="Close chart">×</button>
+      <h3 id="chartTitle">Chart</h3>
+      <img id="chartModalImage" src="" alt="Expanded chart">
+    </div>
+  </div>
+
+  <script src="feed.js"></script>
 </body>
 </html>
