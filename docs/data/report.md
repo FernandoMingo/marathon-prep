@@ -1,5 +1,5 @@
 # Plan-aware Hybrid Marathon Analysis
-Window: 2026-02-01 -> 2026-04-07
+Window: 2026-02-01 -> 2026-04-08
 
 ## This Week
 - Plan week: 1.0
@@ -13,8 +13,8 @@ Window: 2026-02-01 -> 2026-04-07
 
 ## Running Progression
 - Rolling 7d running km: 29.998
-- Rolling 28d running km: 67.98479999999999
-- Run frequency last 7/14/28: 3/3/8
+- Rolling 28d running km: 59.968
+- Run frequency last 7/14/28: 3/3/7
 - Easy pace trend (negative faster): 0.14840499539921784
 - Pace/HR efficiency trend: -0.00045543671703953797
 
