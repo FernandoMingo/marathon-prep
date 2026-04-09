@@ -18,11 +18,11 @@ $startTime = (Get-Date).AddMinutes(5).ToString("HH:mm")
     /TN $taskName `
     /TR "`"$batPath`"" `
     /SC DAILY `
-    /MO 2 `
+    /MO 1 `
     /ST $startTime `
     /F | Out-Null
 
 Write-Host "Tarea creada: $taskName"
-Write-Host "Frecuencia: cada 2 dias"
+Write-Host "Frecuencia: cada 1 dia(s)"
 Write-Host "Inicio: $startTime"
 Write-Host "Comando: $batPath"
