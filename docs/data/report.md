@@ -1,5 +1,5 @@
 # Plan-aware Hybrid Marathon Analysis
-Window: 2026-02-01 -> 2026-04-09
+Window: 2026-02-01 -> 2026-04-11
 
 ## This Week
 - Plan week: 1.0
@@ -12,11 +12,11 @@ Window: 2026-02-01 -> 2026-04-09
 - Plan compliance score: 72.8
 
 ## Running Progression
-- Rolling 7d running km: 20.0163
-- Rolling 28d running km: 59.968
-- Run frequency last 7/14/28: 2/3/7
+- Rolling 7d running km: 36.0251
+- Rolling 28d running km: 73.93430000000001
+- Run frequency last 7/14/28: 3/4/7
 - Easy pace trend (negative faster): 0.14840499539921784
-- Pace/HR efficiency trend: -0.00045543671703953797
+- Pace/HR efficiency trend: -0.000174530603484034
 
 ## Durability
 - Consecutive weeks with 2+ runs: 1
@@ -29,8 +29,8 @@ Window: 2026-02-01 -> 2026-04-09
 ## Football Interference
 - Status: ok
 - Next-day pace delta: None
-- 48h pace delta: 0.13361541118223327
-- 72h pace delta: 0.1519562139789559
+- 48h pace delta: 0.23273858952531631
+- 72h pace delta: 0.25107939232203896
 
 ## Predictions
 - Next-week volume completion probability: 0.71
@@ -45,16 +45,16 @@ Window: 2026-02-01 -> 2026-04-09
 - Marathon readiness: strong
 
 ## Marathon Estimate
-- Fitness-based: 03:54:23
-- Durability-adjusted: 04:19:03
-- Realistic range: 03:40:28 to 04:10:30
+- Fitness-based: 03:44:39
+- Durability-adjusted: 04:09:18
+- Realistic range: 03:35:56 to 04:10:30
 - Confidence score: 98.0/100
 
 ## Pace Recommendations
 - Easy: 5.21-5.56 min/km
 - Steady: 4.86-5.06 min/km
-- Marathon pace: 5.65-5.80 min/km
-- Threshold: 5.35-5.50 min/km
+- Marathon pace: 5.42-5.57 min/km
+- Threshold: 5.12-5.27 min/km
 
 ## Confidence Notes
 - Confidence is stable: recent running and football data coverage are adequate.
