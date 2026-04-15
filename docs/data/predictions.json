@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-04-11 14:22:41",
+  "generated_at": "2026-04-15 07:43:15",
   "readiness": {
     "aerobic_fitness_status": "declining",
-    "durability_status": "insufficient",
+    "durability_status": "building",
     "fatigue_status": "high",
     "marathon_readiness": "strong"
   },
   "probabilities": {
-    "next_week_volume_completion_probability": 0.71,
-    "next_long_run_completion_probability": 0.255,
-    "next_quality_completion_probability": 0.656,
-    "next_week_downscale_probability": 0.751
+    "next_week_volume_completion_probability": 0.548,
+    "next_long_run_completion_probability": 0.198,
+    "next_quality_completion_probability": 0.514,
+    "next_week_downscale_probability": 0.9
   },
   "marathon_prediction": {
     "fitness_based": 224.6525176013567,
-    "durability_adjusted": 249.31252507477132,
+    "durability_adjusted": 252.29842774919058,
     "aggressive": 215.94136332270202,
     "conservative": 250.50192571282648,
     "confidence_score": 98.0
