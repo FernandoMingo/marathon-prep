@@ -1,63 +1,63 @@
 # Plan-aware Hybrid Marathon Analysis
-Window: 2026-02-01 -> 2026-04-17
+Window: 2026-02-01 -> 2026-04-21
 
 ## This Week
-- Plan week: 2.0
+- Plan week: 3.0
 - Phase: Base con fútbol
 - Planned sessions: 3
-- Completed sessions: 2
-- Running km vs target: 26.0 / 34.0
-- Long run status: done
+- Completed sessions: 0
+- Running km vs target: 0.0 / 38.0
+- Long run status: pending
 - Football status: estimated
-- Plan compliance score: 84.0
+- Plan compliance score: 0.0
 
 ## Running Progression
-- Rolling 7d running km: 0.0
-- Rolling 28d running km: 54.4157
-- Run frequency last 7/14/28: 0/3/5
-- Easy pace trend (negative faster): 0.14840499539921784
-- Pace/HR efficiency trend: -0.000174530603484034
+- Rolling 7d running km: 11.229
+- Rolling 28d running km: 57.2358
+- Run frequency last 7/14/28: 1/2/5
+- Easy pace trend (negative faster): 0.1399755804545392
+- Pace/HR efficiency trend: -0.00035327571526890103
 
 ## Durability
-- Consecutive weeks with 2+ runs: 2
-- Consecutive weeks with long run completed: 1
-- Long-run progression slope: 1.572360909090909
-- Planned volume absorbed: 157.29250000000002
-- Planned long runs completed: 50.0
-- Weeks football likely forced downscale: 1
+- Consecutive weeks with 2+ runs: 0
+- Consecutive weeks with long run completed: 0
+- Long-run progression slope: 0.9904195804195803
+- Planned volume absorbed: 98.69333333333334
+- Planned long runs completed: 33.333333333333336
+- Weeks football likely forced downscale: 2
 
 ## Football Interference
 - Status: ok
 - Next-day pace delta: None
-- 48h pace delta: 0.23273858952531631
-- 72h pace delta: 0.25107939232203896
+- 48h pace delta: 0.13299954394174693
+- 72h pace delta: 0.15134034673846955
 
 ## Predictions
-- Next-week volume completion probability: 0.55
-- Next long-run completion probability: 0.20
-- Next quality completion probability: 0.51
-- Downscale probability: 0.90
+- Next-week volume completion probability: 0.54
+- Next long-run completion probability: 0.27
+- Next quality completion probability: 0.52
+- Downscale probability: 0.89
 
 ## Readiness
 - Aerobic fitness: declining
 - Durability: building
-- Fatigue: high
+- Fatigue: low
 - Marathon readiness: strong
 
 ## Marathon Estimate
-- Fitness-based: 03:44:39
-- Durability-adjusted: 04:12:17
-- Realistic range: 03:35:56 to 04:10:30
-- Confidence score: 98.0/100
+- Fitness-based: 03:54:23
+- Durability-adjusted: 04:15:17
+- Realistic range: 03:35:56 to 04:17:47
+- Confidence score: 80.0/100
 
 ## Pace Recommendations
-- Easy: 5.21-5.56 min/km
-- Steady: 4.86-5.06 min/km
-- Marathon pace: 5.42-5.57 min/km
-- Threshold: 5.12-5.27 min/km
+- Easy: 5.09-5.44 min/km
+- Steady: 4.74-4.94 min/km
+- Marathon pace: 5.50-5.65 min/km
+- Threshold: 5.20-5.35 min/km
 
 ## Confidence Notes
-- Confidence is stable: recent running and football data coverage are adequate.
+- Confidence reduced because football actuals are missing for the last 23 days.
 
 ## Files generated
 - report.md
