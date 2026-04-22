@@ -1,5 +1,5 @@
 # Plan-aware Hybrid Marathon Analysis
-Window: 2026-02-01 -> 2026-04-21
+Window: 2026-02-01 -> 2026-04-22
 
 ## This Week
 - Plan week: 3.0
@@ -57,7 +57,7 @@ Window: 2026-02-01 -> 2026-04-21
 - Threshold: 5.20-5.35 min/km
 
 ## Confidence Notes
-- Confidence reduced because football actuals are missing for the last 23 days.
+- Confidence reduced because football actuals are missing for the last 24 days.
 
 ## Files generated
 - report.md

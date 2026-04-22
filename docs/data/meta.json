@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-04-21 23:45:19",
+  "generated_at": "2026-04-22 22:00:18",
   "source_outdir": "C:\\Users\\20243952\\repos\\analisis-futbol\\analysis_output",
   "has_plan_pdf": true,
   "football_coverage_pct": 66.66666666666666,
   "football_weeks_with_data": 8,
   "football_weeks_total": 12,
-  "football_days_since_last": 23,
+  "football_days_since_last": 24,
   "football_coverage_threshold_pct": 35.0,
   "football_combined_sufficient": true,
   "prediction_confidence_score": 80.0
