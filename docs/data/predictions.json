@@ -1,31 +1,31 @@
 {
-  "generated_at": "2026-04-22 22:00:14",
+  "generated_at": "2026-04-26 18:09:04",
   "readiness": {
     "aerobic_fitness_status": "declining",
-    "durability_status": "building",
-    "fatigue_status": "low",
+    "durability_status": "strong",
+    "fatigue_status": "medium",
     "marathon_readiness": "strong"
   },
   "probabilities": {
-    "next_week_volume_completion_probability": 0.544,
-    "next_long_run_completion_probability": 0.27,
-    "next_quality_completion_probability": 0.522,
-    "next_week_downscale_probability": 0.888
+    "next_week_volume_completion_probability": 0.62,
+    "next_long_run_completion_probability": 0.413,
+    "next_quality_completion_probability": 0.595,
+    "next_week_downscale_probability": 0.695
   },
   "marathon_prediction": {
-    "fitness_based": 234.39263350298143,
-    "durability_adjusted": 255.29362123521057,
-    "aggressive": 215.94136332270202,
-    "conservative": 257.79587629560365,
+    "fitness_based": 220.48048377441327,
+    "durability_adjusted": 231.38778574520347,
+    "aggressive": 191.9168860192289,
+    "conservative": 254.39513804205365,
     "confidence_score": 80.0
   },
   "pace_recommendations": {
-    "easy": "5.09-5.44 min/km",
-    "steady": "4.74-4.94 min/km",
-    "marathon": "5.50-5.65 min/km",
-    "threshold": "5.20-5.35 min/km"
+    "easy": "5.22-5.57 min/km",
+    "steady": "4.87-5.07 min/km",
+    "marathon": "5.26-5.41 min/km",
+    "threshold": "4.96-5.11 min/km"
   },
   "confidence_notes": [
-    "Confidence reduced because football actuals are missing for the last 24 days."
+    "Confidence reduced because football actuals are missing for the last 28 days."
   ]
 }
