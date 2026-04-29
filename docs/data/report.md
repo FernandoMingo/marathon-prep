@@ -1,5 +1,5 @@
 # Plan-aware Hybrid Marathon Analysis
-Window: 2026-02-01 -> 2026-04-26
+Window: 2026-02-01 -> 2026-04-29
 
 ## This Week
 - Plan week: 4.0
@@ -12,9 +12,9 @@ Window: 2026-02-01 -> 2026-04-26
 - Plan compliance score: 100.0
 
 ## Running Progression
-- Rolling 7d running km: 37.441
+- Rolling 7d running km: 21.1985
 - Rolling 28d running km: 83.4478
-- Run frequency last 7/14/28: 3/3/7
+- Run frequency last 7/14/28: 1/3/7
 - Easy pace trend (negative faster): 0.11674986680650262
 - Pace/HR efficiency trend: -0.00019443082586923644
 
@@ -57,7 +57,7 @@ Window: 2026-02-01 -> 2026-04-26
 - Threshold: 4.96-5.11 min/km
 
 ## Confidence Notes
-- Confidence reduced because football actuals are missing for the last 28 days.
+- Confidence reduced because football actuals are missing for the last 31 days.
 
 ## Files generated
 - report.md

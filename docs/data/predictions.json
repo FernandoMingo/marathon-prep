@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-26 22:19:33",
+  "generated_at": "2026-04-29 10:18:22",
   "readiness": {
     "aerobic_fitness_status": "declining",
     "durability_status": "strong",
@@ -26,6 +26,6 @@
     "threshold": "4.96-5.11 min/km"
   },
   "confidence_notes": [
-    "Confidence reduced because football actuals are missing for the last 28 days."
+    "Confidence reduced because football actuals are missing for the last 31 days."
   ]
 }
